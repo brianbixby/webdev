@@ -2,53 +2,167 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Built By Bixby</title>
+    <title>Brian Bixby</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
   </head>
   <body>
-    <div class="container-fluid">
+      <!-- NAV -->
       <nav id="head">
         <div class="nav-left">
-          <a id="nav-mainlink" href="/" target="_blank" id="nav-mainlink">BUILT BY BRIAN</a>
+          <a id="nav-mainlink" href="#head" target="_blank" id="nav-mainlink"><span class="large"> < </span>Brian Bixby <span class="large"> > </span></a>
         </div>
         <div class="nav-right">
           <ul class="nav-right-ul" style="list-style: none;">
-            <li><a href="/about" target="_blank" class="nav-sublinks">About</a></li>
-            <li><a href="/work" target="_blank" class="nav-sublinks">Work</a></li>
-            <li><a href="/skills" target="_blank" class="nav-sublinks">Skills</a></li>
-            <li><a href="/contact" target="_blank" class="nav-sublinks">Contact</a></li>
-            <li><a href="#" target="_blank" class="nav-sublinks">Resume</a></li>
+            <li><a id="aboutLink" href="#about" target="_blank" class="nav-sublinks">About</a></li>
+            <li><a id="workLink" href="#work" target="_blank" class="nav-sublinks">Work</a></li>
+            <li><a id="skillsLink" href="#skills" target="_blank" class="nav-sublinks">Skills</a></li>
+            <li><a id="contactLink" href="#contact" target="_blank" class="nav-sublinks">Contact</a></li>
+            <li><a href="https://resume.creddle.io/resume/5n9dp9okfvo" target="_blank" class="nav-sublinks">Resume</a></li>
           </ul>
         </div>
       </nav>
 
-        <!-- <nav class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="navLogo"class="navbar-brand" href="/">Chow <span id="navTagline"class="disable-link ">     Eat Great</span></a>
-          </div>
+      <!-- ABOUT -->
 
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/signup" ng-hide="isLoggedIn()">Signup</a></li>
-              <li><a href="/login" ng-hide="isLoggedIn()">Login</a></li>
-              <li><a href="/login" ng-click="logout()" ng-show="isLoggedIn()">Logout</a></li>
-              <li><a href="/profile" ng-show="isLoggedIn()">Favorites</a></li>
-            </ul>
+      <section id="about" class="container-fluid">
+        <div class="row vertical-align">
+          <div id="divPictureOfMe"class="col-xs-12 col-sm-6">
+            <img class="center-block" id="pictureOfMe" src="img/me.jpg">
           </div>
-        </nav> -->
+          <div id="aboutText" class="col-xs-12 col-sm-6">
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight.js"></script>
-      <script src="js/main.js"></script>
-    </div>
+            <p><b>Hi, I'm Brian</b>, a Seattle-based web developer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br><br>
+            On a more personal note, I love football, food, music, movies, running with my dog Sven, and so on. If you'd like to get in touch, jump straight to my <a ng-click="toContact()" href="#Contact">contact info</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--WORK  -->
+      <section id="work">
+        <div class="container">
+          <div class="col-lg-12 text-center">
+            <h1 class="page-header">Recent Works</h1>
+            <p class="titlep">Click the link on the desired project to view the code or visit the site.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="img/chow.png" alt="chow">
+                  <div class="overlay">
+                     <h2>Chow</h2>
+                     <a class="info" data-toggle="modal" data-target="#modal-fullscreen">Learn More</a>
+                  </div>
+              </div>
+
+              <!-- Modal fullscreen -->
+              <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h4 class="modal-title" id="myModalLabel">CHOW</h4>
+                    </div>
+                    <div class="modal-body">
+                    <img class="modalScreenShots" src="img/chowScreenShot.png" alt="Chow">
+                    <p class="modalText">Find your favorite food with Chow. Enter a dish of your choice then filter by allergies, calories, and other dietary constraints. Nutritional information is also available including a breakdown fats, carbs, vitamins and minerals. </p>
+                    <a href="https://github.com/brianbixby/recipesite">
+                    <img class="githubButton" src="img/github.png" alt="github">
+                    </a>
+                    <a href="https://brianbixbyrecipe.herokuapp.com/">
+                    <img class="jumpButton" src="img/jump.png" alt="github">
+                    </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="img/realEstate.png" alt="real estate">
+                  <div class="overlay">
+                     <h2>Real Estate</h2>
+                     <a class="info" href="#">Learn More</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="img/metroTripAdvisor.png" alt="metro trip advisor">
+                  <div class="overlay">
+                     <h2>Metro Trip Advisor</h2>
+                     <a class="info" href="#">Learn More</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="img/connectFour.png" alt="Connect Four">
+                  <div class="overlay">
+                     <h2>Connect Four</h2>
+                     <a class="info" href="#">Learn More</a>
+                  </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="row">
+            <img class="icons" src="img/icons/mongo.png">
+            <img class="icons" src="img/icons/express.jpeg">
+            <img id="angularIcon" class="icons" src="img/icons/angular.png">
+            <img class="icons" src="img/icons/node.png">
+            <img id="cssIcon" class="icons" src="img/icons/css3.png">
+            <img id="htmlIcon" class="icons" src="img/icons/html5.png">
+            <img class="icons" src="img/icons/javascript.png">
+            <img class="icons" src="img/icons/jquery.jpg">
+            <img class="icons" src="img/icons/postgres.png">
+            <img class="icons" src="img/icons/python.png">
+            <img class="icons" src="img/icons/django.svg">
+            <img class="icons" src="img/icons/github.png">
+        </div>
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section id="contact">
+      <h1>CONTACT</h1>
+      <h4>PLEASE REACH OUT, I'D BE HAPPY TO TALK</h4>
+      <a href="" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+      <a href="https://github.com/brianbixby" target="_blank"><i class="fa fa-lg fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/brianbixby1/" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a>
+      </section>
+
+
+
+
+    <footer>
+      <p>BUILT BY BRIAN BIXBY</p>
+      <P id="mail"> <span class="glyphicon glyphicon-envelope"></span> </P>
+      <P> </P>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight.js"></script>
+    <script src="js/animatedModal.js"></script>
+    <script src="js/main.js"></script>
+  </div>
   </body>
 </html>

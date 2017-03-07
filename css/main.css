@@ -1,16 +1,17 @@
 #head {
   width: 100%;
-  background-color: gray;
-  /*background: url(../img/desk.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
+  background-color: #3b3a36;
+}
+#aboutText {
+  padding-top: 10%;
+}
+#about {
+  margin-top: 80px;
 }
 
-/*   NAV  */
 .nav-left {
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 40px;
   position: absolute;
 }
@@ -19,13 +20,19 @@
   font-size: 22px;
 }
 
+#work {
+  background-color: #b3c2bf;
+}
+
 #nav-mainlink:hover {
   text-decoration: none;
-  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
 }
 
 .nav-right{
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .nav-sublinks {
   color: rgba(255, 255, 255, 0.7);
@@ -42,9 +49,23 @@ li {
   margin-right: 25px;
 }
 
+@media only screen and (max-width : 885px) {
+  #aboutText {
+    padding-top: 5%;
+  }
+}
+
 @media only screen and (max-width : 685px) {
+  #aboutText {
+    padding-top: 0;
+  }
+  #pictureOfMe {
+    margin-top: 50px;
+  }
   .nav-left {
     padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
     position: relative;
     display: flex;
     margin: auto;
@@ -52,6 +73,10 @@ li {
   }
   #nav-mainlink {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top: 100px;
   }
   li {
     float: none;
@@ -65,7 +90,9 @@ li {
 
   .nav-right{
     padding-top: 20px;
+    padding-bottom: 0px;
   }
+
 }
 @media only screen and (max-width : 515px) {
   .nav-sublinks {
@@ -84,4 +111,149 @@ li {
   .nav-sublinks {
     font-size: 8px;
   }
+}
+
+#pictureOfMe {
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  border-radius: 50%;
+}
+.center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#workTitle {
+  font-size: 24px;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: center;
+}
+
+#htmlIcon {
+  height: 90px;
+  margin-top: 25px;
+}
+
+#angularIcon {
+  height: 120px;
+  margin-top: 10px;
+}
+
+#skills {
+  background-color: gray;
+}
+
+@media only screen and (max-width : 555px) {
+  .icons {
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+  }
+  #htmlIcon {
+    height: 90px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width : 555px) {
+  .icons {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  #htmlIcon {
+    height: 90px;
+    margin-top: 10px;
+  }
+}
+
+#head {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+footer {
+  height: 500px;
+}
+
+a.active {
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+nav-sublinks, nav-sublinks:hover, nav-sublinks:visited {
+    text-decoration:none;
+}
+
+.nav-right-ul {
+  text-decoration: none;
+}
+.nav-sublinks:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#head{
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+   -moz-box-shadow: 0px 0px 8px 2px #000000;
+        box-shadow: 0px 0px 8px 2px #000000;
+}
+
+#workTitle {
+  color: white;
+  display: inline-block;;
+  border-bottom: 4px white solid;
+  padding: 20px 40px;
+}
+
+#workTitleDiv {
+  text-align: center;
+}
+.portfolioPieces {
+  margin: 30px 0;
+}
+
+.text-center {
+  color: white;
+}
+
+.githubButton{
+  text-align: center;
+  height: 75px;
+  width: 75px;
+}
+
+.jumpButton{
+  text-align: center;
+  height: 70px;
+  width: 70px;
+}
+
+.githubButton:hover {
+  opacity: .5;
+}
+.jumpButton:hover {
+  opacity: .5;
 }
