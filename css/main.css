@@ -21,6 +21,7 @@ body {
 }
 
 .navbar{
+  background-color: #33363B;
   -webkit-box-shadow: 0px 0px 8px 2px #000000;
    -moz-box-shadow: 0px 0px 8px 2px #000000;
         box-shadow: 0px 0px 8px 2px #000000;
@@ -49,8 +50,30 @@ img {
 }
 
 /* SKILLS */
-#skills {
-  background-color: gray;
+#skillsRowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.iconImgAndText {
+  display: relative;
+  position: relative;
+}
+.iconImgAndText:hover .icons{
+  opacity: 0;
+}
+.iconImgAndText:hover .iconText{
+    display: block;
+}
+.iconText{
+  position:absolute;
+  display:none;
+  top: 45px;
+  left: 25px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .icons {
@@ -75,6 +98,11 @@ img {
 }
 
 /* WORK */
+#work {
+  background-color: #808080;
+}
+
+
 #workTitle {
   color: white;
   display: inline-block;;
@@ -87,8 +115,8 @@ img {
   text-align: center;
 }
 
-.portfolioPieces {
-  margin: 30px 0;
+.hovereffect {
+  margin-bottom: 50px;
 }
 
 .githubButton{
@@ -112,13 +140,33 @@ img {
 
 /* CONTACT */
 
+/* FOOTER */
+footer {
+  background-color: #33363B;
+  height: 100px;
+}
+
 /* MEDIA QUERIES*/
+@media only screen and (min-width : 886px) {
+  #aboutText {
+    padding-top: 8%;
+  }
+}
 @media only screen and (max-width : 885px) {
   #aboutText {
     padding-top: 5%;
   }
 }
 
+@media only screen and (min-width : 769px) {
+
+}
+
+@media only screen and (max-width : 685px) {
+  .hovereffect {
+    margin-bottom: 30px;
+  }
+}
 @media only screen and (max-width : 685px) {
   #aboutText {
     padding-top: 0;
