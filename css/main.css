@@ -257,3 +257,28 @@ nav-sublinks, nav-sublinks:hover, nav-sublinks:visited {
 .jumpButton:hover {
   opacity: .5;
 }
+
+body {
+  position: relative;
+}
+
+#navbar-example {
+  color: black;
+}
+
+#about {
+  padding-top:50px;
+  height:500px;
+}
+#work {
+  padding-top:50px;
+  height:500px;
+}
+#skills {
+  padding-top:50px;
+  height:500px;
+}
+#contact {
+  padding-top:50px;
+  height:500px;
+}
