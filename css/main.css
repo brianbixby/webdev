@@ -1,116 +1,38 @@
-#head {
+body {
+  position: relative;
+}
+
+/* SECTION PADDINGS */
+#about, #contact, #work, #skills  {
+  padding-top:50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-center {
+  color: white;
+}
+
+/* NAVBAR */
+#homeLink {
+  color: white;
+}
+
+.navbar{
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+   -moz-box-shadow: 0px 0px 8px 2px #000000;
+        box-shadow: 0px 0px 8px 2px #000000;
+}
+
+/* ABOUT */
+img {
   width: 100%;
-  background-color: #3b3a36;
 }
-#aboutText {
-  padding-top: 10%;
-}
+
 #about {
-  margin-top: 80px;
-}
-
-.nav-left {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  position: absolute;
-}
-#nav-mainlink {
-  color: white;
-  font-size: 22px;
-}
-
-#work {
-  background-color: #b3c2bf;
-}
-
-#nav-mainlink:hover {
-  text-decoration: none;
-  border-bottom: 2px solid white;
-  padding-bottom: 3px;
-}
-
-.nav-right{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.nav-sublinks {
-  color: rgba(255, 255, 255, 0.7);
-  display: inline-block;
-  font-size: 22px;
-}
-.nav-sublinks:hover {
-  color: white;
-  text-decoration: none;
-}
-
-li {
-  float: right;
-  margin-right: 25px;
-}
-
-@media only screen and (max-width : 885px) {
-  #aboutText {
-    padding-top: 5%;
-  }
-}
-
-@media only screen and (max-width : 685px) {
-  #aboutText {
-    padding-top: 0;
-  }
-  #pictureOfMe {
-    margin-top: 50px;
-  }
-  .nav-left {
-    padding-left: 0;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    position: relative;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-  }
-  #nav-mainlink {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    position:absolute;
-    top: 100px;
-  }
-  li {
-    float: none;
-    margin: none;
-    padding: none;
-  }
-  .nav-right-ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-right{
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
-
-}
-@media only screen and (max-width : 515px) {
-  .nav-sublinks {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width : 515px) {
-  .nav-sublinks {
-    font-size: 12px;
-  }
-}
-
-
-@media only screen and (max-width : 350px) {
-  .nav-sublinks {
-    font-size: 8px;
-  }
+  margin-top: 30px;
 }
 
 #pictureOfMe {
@@ -121,16 +43,14 @@ li {
   margin-bottom: 5%;
   border-radius: 50%;
 }
-.center {
-  text-align: center;
+
+#colorBlue {
+  color: blue;
 }
 
-img {
-  width: 100%;
-}
-
-#workTitle {
-  font-size: 24px;
+/* SKILLS */
+#skills {
+  background-color: gray;
 }
 
 .icons {
@@ -154,89 +74,21 @@ img {
   margin-top: 10px;
 }
 
-#skills {
-  background-color: gray;
-}
-
-@media only screen and (max-width : 555px) {
-  .icons {
-    margin: 5px;
-    width: 75px;
-    height: 75px;
-  }
-  #htmlIcon {
-    height: 90px;
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width : 555px) {
-  .icons {
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-  }
-  #htmlIcon {
-    height: 90px;
-    margin-top: 10px;
-  }
-}
-
-#head {
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:100;
-}
-
-footer {
-  height: 500px;
-}
-
-a.active {
-  border-bottom: 2px solid white;
-  text-decoration: none;
-  color: white;
-}
-
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-nav-sublinks, nav-sublinks:hover, nav-sublinks:visited {
-    text-decoration:none;
-}
-
-.nav-right-ul {
-  text-decoration: none;
-}
-.nav-sublinks:visited {
-  color: white;
-  text-decoration: none;
-}
-
-#head{
-  -webkit-box-shadow: 0px 0px 8px 2px #000000;
-   -moz-box-shadow: 0px 0px 8px 2px #000000;
-        box-shadow: 0px 0px 8px 2px #000000;
-}
-
+/* WORK */
 #workTitle {
   color: white;
   display: inline-block;;
   border-bottom: 4px white solid;
   padding: 20px 40px;
+  font-size: 24px;
 }
 
 #workTitleDiv {
   text-align: center;
 }
+
 .portfolioPieces {
   margin: 30px 0;
-}
-
-.text-center {
-  color: white;
 }
 
 .githubButton{
@@ -258,27 +110,32 @@ nav-sublinks, nav-sublinks:hover, nav-sublinks:visited {
   opacity: .5;
 }
 
-body {
-  position: relative;
+/* CONTACT */
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 885px) {
+  #aboutText {
+    padding-top: 5%;
+  }
 }
 
-#navbar-example {
-  color: black;
+@media only screen and (max-width : 685px) {
+  #aboutText {
+    padding-top: 0;
+  }
+  #pictureOfMe {
+    margin-top: 0px;
+  }
 }
 
-#about {
-  padding-top:50px;
-  height:500px;
-}
-#work {
-  padding-top:50px;
-  height:500px;
-}
-#skills {
-  padding-top:50px;
-  height:500px;
-}
-#contact {
-  padding-top:50px;
-  height:500px;
+@media only screen and (max-width : 555px) {
+  .icons {
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+  }
+  #htmlIcon {
+    height: 90px;
+    margin-top: 10px;
+  }
 }
