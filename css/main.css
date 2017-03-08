@@ -89,9 +89,25 @@ img {
   position:absolute;
   display:none;
   top: 45px;
-  left: 25px;
+  left: 20px;
   font-weight: bold;
   font-size: 22px;
+}
+#cssText {
+  left: 60px;
+}
+#htmlText, #pythonText {
+  left: 50px;
+}
+#jqueryText, #djangoText, #reactText, #nodeText, #javascriptText  {
+  left: 40px;
+}
+
+ #angularText {
+  left: 30px;
+}
+#bootstrapText, #mongoText {
+  left: 35px;
 }
 
 .icons {
@@ -183,6 +199,8 @@ img {
 #contact {
   background-color: #22313f;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #footerText {
   color: white;
@@ -207,8 +225,43 @@ footer {
   }
 }
 
-@media only screen and (min-width : 769px) {
+@media only screen and (max-width : 785px) {
+   .navbar-nav, {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar-right {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar-header {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin: auto;
+  }
+  #homeLink {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  li {
+    float: left;
+  }
 
+  .navbar-brand {
+    padding-left:: 0;
+  }
+
+  #about {
+    margin-top: 75px;
+  }
+  .footerIcons {
+    float: none;
+  }
 }
 
 @media only screen and (max-width : 685px) {
@@ -234,5 +287,28 @@ footer {
   #htmlIcon {
     height: 90px;
     margin-top: 10px;
+  }
+  .iconText{
+    top: 25px;
+    left: 0px;
+  }
+  #cssText {
+    left: 35px;
+  }
+  #htmlText, #pythonText {
+    left: 30px;
+  }
+  #jqueryText, #djangoText, #reactText, #nodeText,    {
+    left: 20px;
+  }
+
+  /*#nodeText,  {
+    left: 10px;
+  }*/
+  #bootstrapText, #mongoText {
+    left: 30px;
+  }
+   #javascriptText, #angularText, {
+    left: 0px;
   }
 }
