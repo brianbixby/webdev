@@ -14,7 +14,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div id="topOfPage"></div>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-custom navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,11 +27,11 @@
       <div>
         <div class="collapse navbar-right navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://resume.creddle.io/resume/5n9dp9okfvo">Resume</a></li>
+            <li><a class="navLinksRight" href="#about">About</a></li>
+            <li><a class="navLinksRight" href="#work">Work</a></li>
+            <li><a class="navLinksRight" href="#skills">Skills</a></li>
+            <li><a class="navLinksRight" href="#contact">Contact</a></li>
+            <li><a class="navLinksRight" href="https://resume.creddle.io/resume/5n9dp9okfvo">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -39,7 +39,7 @@
   </nav>
 
   <!-- ABOUT -->
-  <div id="about" class="container-fluid">
+  <div id="about" class="container">
     <div class="row vertical-align">
       <div id="divPictureOfMe"class="col-xs-12 col-sm-6">
         <img class="center-block" id="pictureOfMe" src="img/me.jpg">
@@ -51,55 +51,55 @@
       </div>
     </div>
   </div>
-
+<!-- col-xs-3 col-sm-2 -->
   <!-- SKILLS -->
   <div id="skills" class="container">
-    <div id="skillsRowContainer" class="row">
-      <div id="angularImgAndText" class="iconImgAndText">
+    <div class="skillsRowContainer" class="row">
+      <div id="angularImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="angularImg" class="icons" src="img/skillIcons/Angular.svg">
         <p id="angularText" class="iconText">AngularJS </p>
       </div>
-      <div id="bootstrapImgAndText" class="iconImgAndText">
+      <div id="bootstrapImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="bootstrapImg" class="icons" src="img/skillIcons/Bootstrap.svg">
         <p id="bootstrapText" class="iconText">Bootstrap </p>
       </div>
-      <div id="cssImgAndText" class="iconImgAndText">
+      <div id="cssImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="cssImg" class="icons" src="img/skillIcons/CSS.svg">
         <p id="cssText" class="iconText">CSS </p>
       </div>
-      <div id="djangoImgAndText" class="iconImgAndText">
+      <div id="djangoImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="djangoImg" class="icons" src="img/skillIcons/django.svg">
         <p id="djangoText" class="iconText">Django </p>
       </div>
-      <div id="htmlImgAndText" class="iconImgAndText">
+      <div id="htmlImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="htmlImg" class="icons" src="img/skillIcons/HTML.svg">
         <p id="htmlText" class="iconText">HTML </p>
       </div>
-      <div id="jqueryImgAndText" class="iconImgAndText">
+      <div id="jqueryImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="jqueryImg" class="icons" src="img/skillIcons/JQuery.svg">
         <p id="jqueryText" class="iconText">jQuery </p>
       </div>
-      <div id="jsImgAndText" class="iconImgAndText">
+      <div id="jsImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="jsImg" class="icons" src="img/skillIcons/JS.svg">
         <p id="jsText" class="iconText">Javascript </p>
       </div>
-      <div id="mongoImgAndText" class="iconImgAndText">
+      <div id="mongoImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="mongoImg" class="icons" src="img/skillIcons/Mongo.svg">
         <p id="mongoText" class="iconText">MongoDB </p>
       </div>
-      <div id="nodeImgAndText" class="iconImgAndText">
+      <div id="nodeImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="nodeImg" class="icons" src="img/skillIcons/Node.svg">
         <p id="nodeText" class="iconText">NodeJS </p>
       </div>
-      <div id="postgresqlImgAndText" class="iconImgAndText">
+      <div id="postgresqlImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="postgresqlImg" class="icons" src="img/skillIcons/Postgresql.svg">
         <p id="postgresqlText" class="iconText">PostgreSQL </p>
       </div>
-      <div id="pythonImgAndText" class="iconImgAndText">
+      <div id="pythonImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="pythonImg" class="icons" src="img/skillIcons/Python.svg">
         <p id="pythonText" class="iconText">Python </p>
       </div>
-      <div id="reactImgAndText" class="iconImgAndText">
+      <div id="reactImgAndText" class="iconImgAndText col-xs-3 col-sm-2">
         <img id="reactImg" class="icons" src="img/skillIcons/react.svg">
         <p id="reactText" class="iconText">ReactJS </p>
       </div>
@@ -119,7 +119,7 @@
           <div class="hovereffect">
               <img class="img-responsive" src="img/chow.png" alt="chow">
               <div class="overlay">
-                 <h2>Chow</h2>
+                 <h2 class="thumbTitle">Chow</h2>
                  <a class="info" data-toggle="modal" data-target="#chowModal">Learn More</a>
                  <p class="info info2"> MongoDB | Express | Angular | Node </p>
               </div>
@@ -154,7 +154,7 @@
           <div class="hovereffect">
               <img class="img-responsive" src="img/realEstate.png" alt="real estate">
               <div class="overlay">
-                 <h2>Real Estate</h2>
+                 <h2 class="thumbTitle">Real Estate</h2>
                  <a class="info" data-toggle="modal" data-target="#realEstate">Learn More</a>
                  <p class="info info2"> PostgreSQL | Express | EJS-Layouts | Node </p>
               </div>
@@ -191,7 +191,7 @@
           <div class="hovereffect">
               <img class="img-responsive" src="img/metroTripAdvisor.png" alt="metro trip advisor">
               <div class="overlay">
-                 <h2>Metro Trip Advisor</h2>
+                 <h2 class="thumbTitle">Metro Trip Advisor</h2>
                  <a class="info" data-toggle="modal" data-target="#metroTripAdvisor">Learn More</a>
                  <p class="info info2"> React| Express | PostgreSQL | Node </p>
               </div>
@@ -226,7 +226,7 @@
           <div class="hovereffect">
               <img class="img-responsive" src="img/connectFour.png" alt="Connect Four">
               <div class="overlay">
-                 <h2>Connect Four</h2>
+                 <h2 class="thumbTitle">Connect Four</h2>
                  <a class="info" data-toggle="modal" data-target="#connectFour">Learn More</a>
                  <p class="info info2"> HTML | CSS | Javascript | jQuery </p>
               </div>
@@ -260,21 +260,17 @@
     </div>
   </div>
 
-
-
-  </div>
   <!-- CONTACT -->
-  </div>
-  <div id="contact" class="container-fluid">
-    <h1>CONTACT</h1>
-    <h4>PLEASE REACH OUT, I'D BE HAPPY TO TALK</h4>
+  <div id="contact" class="container">
+    <h1 id="contactHeader">CONTACT</h1>
+    <h4 id="contactSubHeader">PLEASE REACH OUT, I'D BE HAPPY TO TALK</h4>
     <a href="" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
     <a href="https://github.com/brianbixby" target="_blank"><i class="fa fa-lg fa-github"></i></a>
     <a href="https://www.linkedin.com/in/brianbixby1/" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a>
   </div>
 
   <footer>
-
+    <p id="footerText"> BRIAN BIXBY 2017 </p>
   </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
