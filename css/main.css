@@ -257,10 +257,13 @@ footer {
   }
 
   #about {
-    margin-top: 75px;
+    padding-top: 90px;
   }
   .footerIcons {
     float: none;
+  }
+  .nav>li>a {
+    padding-top: 0;
   }
 }
 
