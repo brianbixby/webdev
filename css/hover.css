@@ -1,31 +1,31 @@
 .hovereffect {
-width:100%;
-height:100%;
-float:left;
-overflow:hidden;
-position:relative;
-text-align:center;
-cursor:default;
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
 }
 
 .hovereffect .overlay {
-width:100%;
-height:100%;
-position:absolute;
-overflow:hidden;
-top:0;
-left:0;
-opacity:0;
-background-color:rgba(0,0,0,0.5);
--webkit-transition:all .4s ease-in-out;
-transition:all .4s ease-in-out
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
 }
 
 .hovereffect img {
-display:block;
-position:relative;
--webkit-transition:all .4s linear;
-transition:all .4s linear;
+  display:block;
+  position:relative;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
 }
 
 .hovereffect h2 {
@@ -34,7 +34,7 @@ color:#fff;
 text-align:center;
 position:relative;
 font-size:17px;
-background:rgba(0,0,0,0.6);
+background:rgba(34,49,63, 1);
 -webkit-transform:translatey(-100px);
 -ms-transform:translatey(-100px);
 transform:translatey(-100px);
@@ -48,7 +48,7 @@ text-decoration:none;
 display:inline-block;
 text-transform:uppercase;
 color:#fff;
-border:1px solid #fff;
+border:1px solid #22a7f0;
 background-color:transparent;
 opacity:0;
 filter:alpha(opacity=0);
@@ -59,7 +59,7 @@ padding:7px 14px;
 }
 
 .hovereffect a.info:hover {
-box-shadow:0 0 5px #fff;
+box-shadow:0 0 5px #22a7f0;
 cursor:pointer;
 }
 

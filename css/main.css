@@ -60,6 +60,7 @@ img {
   margin-right: auto;
   margin-bottom: 5%;
   border-radius: 50%;
+  /*border: 2px #22313f solid;*/
 }
 
 #colorBlue {
@@ -144,12 +145,14 @@ img {
   text-align: center;
   height: 75px;
   width: 75px;
+  margin-right: 50px;
+  margin-bottom: 35px;
 }
 
 .jumpButton{
-  text-align: center;
-  height: 70px;
-  width: 70px;
+  font-size: 70px;
+  color: #22A7F0;
+  padding-top: 20px;
 }
 
 .githubButton:hover {
@@ -159,29 +162,37 @@ img {
   opacity: .5;
 }
 
-/* CONTACT */
+/*.img-responsive {
+  border:1px solid #22a7f0;
+}*/
+
+/* CONTACT/FOOTER */
 #contactHeader {
   text-align: center;
-  color: gray;
+  color: white;
 }
 
 #contactSubHeader {
+  display: inline-block;
   text-align: center;
-  color: gray;
+  color: white;
+  padding: 10px 30px;
+  border-bottom: 3px white solid;
 }
 
-/* FOOTER */
-footer {
+#contact {
   background-color: #22313f;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 #footerText {
   color: white;
-  /*font-weight: bold;*/
   font-size: 26px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+    background-color: #22313f;
 }
 
 /* MEDIA QUERIES*/
